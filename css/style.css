@@ -1,0 +1,59 @@
+html, body {
+	overflow: auto;
+	margin: 0;
+	padding: 0;
+	font-family: Segoe UI Light, Verdana, Corbel, Tahoma, Calibri;
+	height: 100%;
+	background: #684C92;
+	}
+	
+a {
+	color: #EAE3EE;
+	text-decoration: none;
+	}
+
+#login-page {
+	overflow: auto;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	background: linear-gradient(to bottom right, #C37AAD , #3E3C87); /* Standard syntax */
+	background: -moz-linear-gradient(-45deg, #C37AAD, #3E3C87 ); /*for FireFox*/
+	color: #EAE3EE;
+	}
+
+#header {
+	}
+
+#header-text {
+	text-align: center;
+	font-size: 350%;
+	margin: 64px 0 64px 0;
+	}
+
+#login {
+	width: 400px;
+	margin-left: auto;
+	margin-top: 100px;
+	margin-right: auto;
+	text-align: center;
+	padding-top: 15px;
+	}
+	
+#password {
+	background-color: transparent;
+	border: solid 1px #EAE3EE;
+	border-radius: 3px;
+	color: #EAE3EE;
+	height: 25px;
+	}
+
+#login-btn {
+	background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+	color: #EAE3EE;
+	font-family: Segoe UI Light;
+	}

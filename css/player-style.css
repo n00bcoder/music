@@ -1,0 +1,179 @@
+html, body { 
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	/*from player-style.css*/
+	color: #666;
+	font-family: Segoe UI Light
+	}
+
+/*This is from the player-style.css file*/
+#wrapper { width: 400px; margin: 10px auto; float: left;}
+h1 { color: #444; font-size: 1.2em; padding: 14px 2px 12px; margin: 0px; }
+h1 em { font-style: normal; color: #999; }
+a { color: #888; text-decoration: none; }
+ol { padding: 0px; margin: 0px; list-style: decimal-leading-zero inside; color: #ccc; width: 460px; border-top: 1px solid #ccc; font-size: 0.9em; }
+ol li { position: relative; margin: 0px; padding: 9px 2px 10px; border-bottom: 1px solid #ccc; cursor: pointer; }
+ol li a { display: block; text-indent: -3.3ex; padding: 0px 0px 0px 20px; }
+li.playing { color: #aaa; text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.3); }
+li.playing a { color: #000; }
+li.playing:before { content: '♬'; width: 14px; height: 14px; padding: 3px; line-height: 14px; margin: 0px; position: absolute; left: -24px; top: 9px; color: #000; font-size: 13px; text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.2); }
+#shortcuts { position: relative; bottom: 0px; width: 100%; color: #666; font-size: 0.9em; margin: 60px 0px 0px; padding: 20px 20px 15px; background: #f3f3f3; background: rgba(240, 240, 240, 0.7); }
+#shortcuts div { width: 460px; margin: 0px auto; }
+#shortcuts h1 { margin: 0px 0px 6px; }
+#shortcuts p { margin: 0px 0px 18px; }
+#shortcuts em { font-style: normal; background: #d3d3d3; padding: 3px 9px; position: relative; left: -3px;
+-webkit-border-radius: 4px; -moz-border-radius: 4px; -o-border-radius: 4px; border-radius: 4px;
+-webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); -moz-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); -o-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); }
+/*@media screen and (max-device-width: 480px) {
+	#wrapper { position: relative; left: -3%; }
+	#shortcuts { display: none; }
+/*end*/
+
+#container { 
+	min-height: 100%;
+	position: relative;
+	}
+
+.mywrapper {
+	width: 1000px;
+	margin: 0 auto 0;
+	}
+
+#myheader {
+	min-height: 80px;
+	background: linear-gradient(to bottom right, #C37AAD , #3E3C87); /* Standard syntax */
+	background: -moz-linear-gradient(-45deg, #C37AAD, #3E3C87 ); /*for FireFox*/
+	color: #EAE3EE;
+	}
+
+#logo {
+	float: left;
+	margin: 0 0 0 60;
+	height: 80px;
+	}
+
+#title {
+	font-size: 200%;
+	margin: 0;
+	padding-top: 15px;
+	}
+
+#upload-form {
+	float: right;
+	margin: 0 130 0 0;
+	height: 80px;
+	}
+
+.upload-form-item {
+	display: inline-block;
+	padding-top: 27px;
+	}
+
+#msg-block {
+	animation: fade-out 3s 1 ease-in;
+	-moz-animation: fade-out 3s 1 ease-in;
+	-webkit-animation: fade-out 3s 1 ease-in;
+	-o-animation: fade-out 3s 1 ease-in;
+	opacity: 0;
+	}
+
+.msg {
+	margin: 0;
+	text-align: center;
+	}
+
+#upload-file {
+	margin-right: 50;
+	}
+
+#content {
+	margin: 0 auto;
+	width: 1160px;
+	overflow: hidden;
+	padding-top: 10px;
+	}
+
+#player {
+	width: 500px;
+	float: left;
+	margin-right: 100px;
+	padding-top: 20px;
+	height: 100px;
+	}
+
+#myshortcuts { 
+	width: 350px;
+	float: left;
+	margin-top: 20px;
+	min-height: 100px;
+	}
+	
+#playlist {
+	width: 480px;
+	margin-top: 20px;
+	padding-left: 30px;
+	float: left;
+	overflow: auto;
+	height: 604px;
+	}
+
+.playlist-dl-cont {
+	position: relative;
+	}
+
+.playlist-dl-link {
+	position: absolute;
+	right: 0; 
+	bottom: 0;
+	}
+
+@keyframes fade-out {
+	0% {opacity: 1;}
+	40% {opacity: 1;}
+	100% {opacity: 0;}
+	}
+
+@-webkit-keyframes fade-out {
+	0% {opacity: 1;}
+	40% {opacity: 1;}
+	100% {opacity: 0;}
+	}
+
+@-moz-keyframes fade-out {
+	0% {opacity: 1;}
+	40% {opacity: 1;}
+	100% {opacity: 0;}
+	}
+
+@-o-keyframes fade-out {
+	0% {opacity: 1;}
+	40% {opacity: 1;}
+	100% {opacity: 0;}
+	}
+
+#upload-button {
+	background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+	color: #EAE3EE;
+	font-family: Segoe UI Light;
+	}
+
+#progress-block {
+	border: solid 1px #abcdef;
+	position: fixed;
+}
+
+progress {
+	border: none;
+	background: transparent;
+	}
+progress::-moz-progress-bar { 
+    background: #00E000;	
+}
+progress::-webkit-progress-value {
+    background: #00E000;
+}

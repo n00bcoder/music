@@ -1,0 +1,16 @@
+/*on html form*/
+<?php
+$msg = $_GET['msg'];
+if(msg == '1') {
+	echo '<p> Error!</p>';
+	}
+
+/*in php proc file*/
+if(error_condition) {
+	header(./music.php?msg=1);
+	} else {
+	header(./music.php?msg=2);
+	}
+	
+msg1 = Error!
+msg2 = Success!

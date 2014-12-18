@@ -1,0 +1,28 @@
+@keyframes fade-out {
+	0% {opacity: 1;}
+	40% {opacity: 1;}
+	100% {opacity: 0;}
+	}
+
+@-webkit-keyframes fade-out {
+	0% {opacity: 1;}
+	40% {opacity: 1;}
+	100% {opacity: 0;}
+	}
+
+@-moz-keyframes fade-out {
+	0% {opacity: 1;}
+	40% {opacity: 1;}
+	100% {opacity: 0;}
+	}
+
+@-o-keyframes fade-out {
+	0% {opacity: 1;}
+	40% {opacity: 1;}
+	100% {opacity: 0;}
+	}
+	
+#test {
+	animation: fade-out 3s 1 ease-in;
+	opacity: 0;
+	}

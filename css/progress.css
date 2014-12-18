@@ -1,0 +1,74 @@
+body {color: #0F90F9}
+#upload-form {}
+.upload-form-item {}
+#upload-file {}
+#msg-block { 
+	border: solid 1px #f90f90;
+	position: relative;
+}
+#msg { 
+    /*border: solid 1px #00ff99;*/
+	position: fixed;
+}
+#progress-block {
+	/*border: solid 1px #abcdef;*/
+	position: fixed;
+}
+
+progress {
+	border: none;
+	background: transparent;
+	}
+progress::-moz-progress-bar { 
+    background: #00E000;	
+}
+progress::-webkit-progress-value {
+    background: #00E000;
+}
+
+.hide-thing {
+    transition: opacity 1s ease-out;
+    -webkit-transition: opacity 1s ease-out; 
+    -moz-transition: opacity 1s ease-out;
+    -o-transition: opacity 1s ease-out;
+    opacity: 0;
+}
+.show-thing {
+    transition: opacity 1s ease-in;
+    -moz-transition: opacity 1s ease-in;
+    -webkit-transition: opacity 1s ease-in; 
+    -o-transition: opacity 1s ease-in;
+    opacity: 1; 
+}
+
+.fade-thing {
+	animation: fade-out 3s 1 ease-in;
+	-moz-animation: fade-out 3s 1 ease-in;
+	-webkit-animation: fade-out 3s 1 ease-in;
+	-o-animation: fade-out 3s 1 ease-in;
+	opacity: 0;
+}
+
+@keyframes fade-out {
+	0% {opacity: 1;}
+	40% {opacity: 1;}
+	100% {opacity: 0;}
+	}
+
+@-webkit-keyframes fade-out {
+	0% {opacity: 1;}
+	40% {opacity: 1;}
+	100% {opacity: 0;}
+	}
+
+@-moz-keyframes fade-out {
+	0% {opacity: 1;}
+	40% {opacity: 1;}
+	100% {opacity: 0;}
+	}
+
+@-o-keyframes fade-out {
+	0% {opacity: 1;}
+	40% {opacity: 1;}
+	100% {opacity: 0;}
+	}
