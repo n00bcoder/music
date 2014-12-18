@@ -22,7 +22,7 @@ progress {
 progress::-moz-progress-bar { 
     background: #00E000;	
 }
-progress::-webkit-progress-value {
+progress::-webkit-progress-bar {
     background: #00E000;
 }
 

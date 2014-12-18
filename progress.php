@@ -2,6 +2,7 @@
 <html>
 <head>
 <title>Progress test</title>
+<meta charset="UTF-8" />
 <link rel="stylesheet" href="./css/progress.css" type="text/css" />
 <script type="text/javascript" src="./js/jquery.js"></script>
 <script type="text/javascript">
@@ -28,15 +29,15 @@ function progressHandler(event){
     $("progress").addClass("show-thing");
 	var percent = (event.loaded / event.total) * 100; 
 	_("progress-bar").value = Math.round(percent);
-    _("msg").innerHTML = Math.round(percent)+"% uploaded... please wait";
 } 
 
 function completeHandler(event){ 
 	//_("msg").innerHTML = event.target.responseText;
 	//_("progressBar").value = 0; 
+    _("msg").innerHTML = "Success!";
     _("upload-file").value = "";
-    $("#msg").removeClass("hide-thing").addClass("show-thing");
     $("progress").removeClass("show-thing").addClass("hide-thing");
+    $("#msg").addClass("show-thing").addClass("fade-thing");
 } 
 
 function errorHandler(event){ 
@@ -57,7 +58,7 @@ function abortHandler(event){
 		<input type="button" value="Upload File" onclick="uploadFile();">
 	</div>
 	<div id="msg-block">
-		<div id="msg" class="hide-thing">
+		<div id="msg">
 		</div>
 		<div id="progress-block">
 			<progress id="progress-bar" value="0" max="100"></progress>
