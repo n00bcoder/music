@@ -14,3 +14,13 @@ if(error_condition) {
 	
 msg1 = Error!
 msg2 = Success!
+
+- Things to do -
+
+Get song list to refresh after upload
+progress bar not working on live site
+    upload progress.php, progress.css to test with
+    create progresstest folder
+    modify copy upload.php to put into progresstest folder
+Get styling finalized for progress bar and message
+Finish styling file uploader element

@@ -9,7 +9,7 @@ if (!$fileTmpLoc) {
     // if file not chosen 
     echo "ERROR: Please browse for a file before clicking the upload button."; exit(); 
 } 
-if(move_uploaded_file($fileTmpLoc, "../progresstest/$fileName")){ 
+if(move_uploaded_file($fileTmpLoc, "../music/$fileName")){ 
     echo "$fileName upload is complete"; 
 } else { 
     echo "move_uploaded_file function failed"; } 
