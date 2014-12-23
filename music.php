@@ -36,7 +36,7 @@
         $("#msg").addClass("fade-thing");
         _("msg").innerHTML = "Success!";
         _("upload-file").value = "";
-        //_("progress-bar").value = 0;
+        _("progress-bar").value = 0;
     } 
     
     function errorHandler(event){ 

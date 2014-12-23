@@ -71,11 +71,7 @@ li.playing:before { content: '♬'; width: 14px; height: 14px; padding: 3px; lin
 	}
 
 #msg-block {
-	animation: fade-out 3s 1 ease-in;
-	-moz-animation: fade-out 3s 1 ease-in;
-	-webkit-animation: fade-out 3s 1 ease-in;
-	-o-animation: fade-out 3s 1 ease-in;
-	opacity: 0;
+    position: relative;
 	}
 
 #msg { 
@@ -178,7 +174,6 @@ li.playing:before { content: '♬'; width: 14px; height: 14px; padding: 3px; lin
 	}
 
 #progress-block {
-	border: solid 1px #abcdef;
 	position: fixed;
 }
 
@@ -187,8 +182,10 @@ progress {
 	background: transparent;
 	}
 progress::-moz-progress-bar { 
-    background: #00E000;	
+	border: none;
+	background: transparent;	
 }
 progress::-webkit-progress-value {
-    background: #00E000;
+	border: none;
+	background: transparent;
 }

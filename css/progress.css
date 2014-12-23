@@ -26,21 +26,6 @@ progress::-webkit-progress-bar {
     background: #00E000;
 }
 
-.hide-thing {
-    transition: opacity 1s ease-out;
-    -webkit-transition: opacity 1s ease-out; 
-    -moz-transition: opacity 1s ease-out;
-    -o-transition: opacity 1s ease-out;
-    opacity: 0;
-}
-.show-thing {
-    transition: opacity 1s ease-in;
-    -moz-transition: opacity 1s ease-in;
-    -webkit-transition: opacity 1s ease-in; 
-    -o-transition: opacity 1s ease-in;
-    opacity: 1; 
-}
-
 .fade-thing {
 	animation: fade-in-out 5s 1 ;
 	-moz-animation: fade-in-out 5s 1 ;
