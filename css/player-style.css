@@ -166,7 +166,8 @@ li.playing:before { content: '♬'; width: 14px; height: 14px; padding: 3px; lin
 #upload-button {
 	background-color: Transparent;
     background-repeat:no-repeat;
-    border: none;
+	border: solid 1px #EAE3EE;
+	border-radius: 3px;
     cursor:pointer;
     overflow: hidden;
 	color: #EAE3EE;
