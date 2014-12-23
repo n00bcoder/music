@@ -78,10 +78,17 @@ li.playing:before { content: '♬'; width: 14px; height: 14px; padding: 3px; lin
 	opacity: 0;
 	}
 
-.msg {
-	margin: 0;
-	text-align: center;
-	}
+#msg { 
+    /*border: solid 1px #00ff99;*/
+	position: fixed;
+    margin: 0;
+    text-align: center;
+}
+#progress-block {
+	/*border: solid 1px #abcdef;*/
+	position: fixed;
+}
+
 
 #upload-file {
 	margin-right: 50;
@@ -128,27 +135,35 @@ li.playing:before { content: '♬'; width: 14px; height: 14px; padding: 3px; lin
 	bottom: 0;
 	}
 
-@keyframes fade-out {
-	0% {opacity: 1;}
-	40% {opacity: 1;}
+.fade-thing {
+	animation: fade-in-out 5s 1 ;
+	-moz-animation: fade-in-out 5s 1 ;
+	-webkit-animation: fade-in-out 5s 1 ;
+	-o-animation: fade-in-out 5s 1 ;
+	opacity: 0;
+}
+
+@keyframes fade-in-out {
+	0% {opacity: 0;}
+	20% {opacity: 1;}
 	100% {opacity: 0;}
 	}
 
-@-webkit-keyframes fade-out {
-	0% {opacity: 1;}
-	40% {opacity: 1;}
+@-webkit-keyframes fade-in-out {
+	0% {opacity: 0;}
+	20% {opacity: 1;}
 	100% {opacity: 0;}
 	}
 
-@-moz-keyframes fade-out {
-	0% {opacity: 1;}
-	40% {opacity: 1;}
+@-moz-keyframes fade-in-out {
+	0% {opacity: 0;}
+	20% {opacity: 1;}
 	100% {opacity: 0;}
 	}
 
-@-o-keyframes fade-out {
-	0% {opacity: 1;}
-	40% {opacity: 1;}
+@-o-keyframes fade-in-out {
+	0% {opacity: 0;}
+	20% {opacity: 1;}
 	100% {opacity: 0;}
 	}
 

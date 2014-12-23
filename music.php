@@ -25,25 +25,32 @@
         ajax.send(formdata); 
     } 
     
-    function progressHandler(event){ 
-        //_("loaded_n_total").innerHTML = "Uploaded "+event.loaded+" bytes of "+event.total; 
-        var percent = (event.loaded / event.total) * 100; 
-        _("progressBar").value = Math.round(percent);
-        //_("msg").innerHTML = Math.round(percent)+"% uploaded... please wait"; 
+    function progressHandler(event){  
+    $("#msg").innerHTML = "";
+    $("#msg").removeClass("fade-thing");
+	var percent = (event.loaded / event.total) * 100; 
+	_("progress-bar").value = Math.round(percent);
     } 
     
     function completeHandler(event){ 
-        _("msg").innerHTML = event.target.responseText; 
-        _("progressBar").value = 0; 
+        $("#msg").addClass("fade-thing");
+        _("msg").innerHTML = "Success!";
         _("upload-file").value = "";
+        //_("progress-bar").value = 0;
     } 
     
     function errorHandler(event){ 
+        $("#msg").addClass("fade-thing");
         _("msg").innerHTML = "Upload Failed"; 
+        _("upload-file").value = "";
+        _("progress-bar").value = 0;
     } 
     
     function abortHandler(event){ 
-        _("msg").innerHTML = "Upload Aborted"; 
+        $("#msg").addClass("fade-thing");
+        _("msg").innerHTML = "Upload Aborted";
+        _("upload-file").value = "";
+        _("progress-bar").value = 0;
     }
     </script>
     <script>
@@ -106,9 +113,13 @@
 			<div class="upload-form-item">
 				<input type="button" id="upload-button" value="Upload File" onclick="uploadFile()">
 			</div>
-			<div id="msg-block">
-				<progress id="progressBar" value="0" max="100" style="width:300px;"></progress> 
-			</div>
+            <div id="msg-block">
+		      <div id="msg">
+		      </div>
+		      <div id="progress-block">
+			     <progress id="progress-bar" value="0" max="100"></progress>
+		      </div>
+	       </div>
 		</form>
 	</div>
 	<div id="content">
