@@ -26,7 +26,9 @@ function uploadFile(){
 
 function progressHandler(event){ 
 	//_("loaded_n_total").innerHTML = "Uploaded "+event.loaded+" bytes of "+event.total; 
-    $("progress").addClass("show-thing");
+    //$("progress").addClass("show-thing");
+    $("#msg").innerHTML = "";
+    $("#msg").removeClass("fade-thing");
 	var percent = (event.loaded / event.total) * 100; 
 	_("progress-bar").value = Math.round(percent);
 } 
@@ -34,10 +36,12 @@ function progressHandler(event){
 function completeHandler(event){ 
 	//_("msg").innerHTML = event.target.responseText;
 	//_("progressBar").value = 0; 
+    $("#msg").addClass("fade-thing");
     _("msg").innerHTML = "Success!";
     _("upload-file").value = "";
-    $("progress").removeClass("show-thing").addClass("hide-thing");
-    $("#msg").addClass("show-thing").addClass("fade-thing");
+    _("progress-bar").value = 0;
+    //$("progress").removeClass("show-thing").addClass("hide-thing");
+    //$("#msg").addClass("show-thing").addClass("fade-thing");
 } 
 
 function errorHandler(event){ 

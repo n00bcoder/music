@@ -42,33 +42,33 @@ progress::-webkit-progress-bar {
 }
 
 .fade-thing {
-	animation: fade-out 3s 1 ease-in;
-	-moz-animation: fade-out 3s 1 ease-in;
-	-webkit-animation: fade-out 3s 1 ease-in;
-	-o-animation: fade-out 3s 1 ease-in;
+	animation: fade-in-out 5s 1 ;
+	-moz-animation: fade-in-out 5s 1 ;
+	-webkit-animation: fade-in-out 5s 1 ;
+	-o-animation: fade-in-out 5s 1 ;
 	opacity: 0;
 }
 
-@keyframes fade-out {
-	0% {opacity: 1;}
-	40% {opacity: 1;}
+@keyframes fade-in-out {
+	0% {opacity: 0;}
+	20% {opacity: 1;}
 	100% {opacity: 0;}
 	}
 
-@-webkit-keyframes fade-out {
-	0% {opacity: 1;}
-	40% {opacity: 1;}
+@-webkit-keyframes fade-in-out {
+	0% {opacity: 0;}
+	20% {opacity: 1;}
 	100% {opacity: 0;}
 	}
 
-@-moz-keyframes fade-out {
-	0% {opacity: 1;}
-	40% {opacity: 1;}
+@-moz-keyframes fade-in-out {
+	0% {opacity: 0;}
+	20% {opacity: 1;}
 	100% {opacity: 0;}
 	}
 
-@-o-keyframes fade-out {
-	0% {opacity: 1;}
-	40% {opacity: 1;}
+@-o-keyframes fade-in-out {
+	0% {opacity: 0;}
+	20% {opacity: 1;}
 	100% {opacity: 0;}
 	}
