@@ -62,7 +62,7 @@ function abortHandler(event){
 		<input type="button" value="Upload File" onclick="uploadFile();">
 	</div>
 	<div id="msg-block">
-		<div id="msg">
+		<div id="msg">test
 		</div>
 		<div id="progress-block">
 			<progress id="progress-bar" value="0" max="100"></progress>

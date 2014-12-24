@@ -5,14 +5,17 @@ body {color: #0F90F9}
 #msg-block { 
 	border: solid 1px #f90f90;
 	position: relative;
+    width: 374px ;
 }
 #msg { 
-    /*border: solid 1px #00ff99;*/
+    border: solid 1px #00ff99;
 	position: fixed;
+    /*width: inherit;*/
 }
 #progress-block {
 	/*border: solid 1px #abcdef;*/
 	position: fixed;
+    width: inherit;
 }
 
 progress {

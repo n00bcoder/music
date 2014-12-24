@@ -72,6 +72,8 @@ li.playing:before { content: '♬'; width: 14px; height: 14px; padding: 3px; lin
 
 #msg-block {
     position: relative;
+    width: 100%;
+    /*border: solid 1px #00ff99;*/
 	}
 
 #msg { 
@@ -79,6 +81,7 @@ li.playing:before { content: '♬'; width: 14px; height: 14px; padding: 3px; lin
 	position: fixed;
     margin: 0;
     text-align: center;
+    /*width: inherit;*/
 }
 #progress-block {
 	/*border: solid 1px #abcdef;*/
@@ -186,7 +189,7 @@ progress::-moz-progress-bar {
 	border: none;
 	background: transparent;	
 }
-progress::-webkit-progress-value {
+progress::-webkit-progress-bar {
 	border: none;
 	background: transparent;
 }
